@@ -7,19 +7,19 @@ from fastapi import APIRouter, File, Header, Request, Response, UploadFile
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
-from ipa_app_distribution_server.apple_ipa import extract_app_info
-from ipa_app_distribution_server.config import (
+from app_distribution_server.apple_ipa import extract_app_info
+from app_distribution_server.config import (
     APP_BASE_URL,
     APP_TITLE,
     UPLOADS_SECRET_AUTH_TOKEN,
 )
-from ipa_app_distribution_server.errors import (
+from app_distribution_server.errors import (
     InvalidFileTypeError,
     NotFoundError,
     UnauthorizedError,
 )
-from ipa_app_distribution_server.qrcode import get_qr_code_svg
-from ipa_app_distribution_server.storage import (
+from app_distribution_server.qrcode import get_qr_code_svg
+from app_distribution_server.storage import (
     create_parent_directories,
     load_app_info,
     load_ipa_app_file,

@@ -4,8 +4,8 @@ from typing import IO
 
 from pydantic import BaseModel
 
-from ipa_app_distribution_server.errors import InvalidFileTypeError
-from ipa_app_distribution_server.logger import logger
+from app_distribution_server.errors import InvalidFileTypeError
+from app_distribution_server.logger import logger
 
 
 class AppInfo(BaseModel):

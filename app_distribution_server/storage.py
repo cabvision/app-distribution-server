@@ -2,8 +2,8 @@ import json
 
 from fs import open_fs
 
-from ipa_app_distribution_server.apple_ipa import AppInfo
-from ipa_app_distribution_server.config import STORAGE_URL
+from app_distribution_server.apple_ipa import AppInfo
+from app_distribution_server.config import STORAGE_URL
 
 PLIST_FILE_NAME = "info.plist"
 APP_IPA_FILE_NAME = "app.ipa"

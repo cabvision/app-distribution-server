@@ -4,6 +4,8 @@
 #
 #    pip-compile --strip-extras requirements-dev.in
 #
+androguard=4.1.2
+    # via pip-tools
 build==1.2.1
     # via pip-tools
 click==8.1.7
